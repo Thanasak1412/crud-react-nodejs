@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -10,8 +11,7 @@ const port = 3001 || process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(
-  "mongodb+srv://new-user:password1234@cluster0.n1zjl.mongodb.net/fruitsDB?retryWrites=true&w=majority",
+mongoose.connect(process.env.URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
