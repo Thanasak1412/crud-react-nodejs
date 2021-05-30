@@ -1,0 +1,44 @@
+.app {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+button {
+  margin: 15px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 20%;
+}
+
+.fruit-item {
+  border: 2px solid rgba(211, 176, 176, 0.815);
+  transition: all 0s ease 0s;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 2px;
+}
+
+.fruit-delete {
+  margin: 0px 5px;
+  padding: 0px 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: none;
+  font-size: 12px;
+  float: right;
+
+  cursor: pointer;
+}
+
+.fruit-update {
+  text-align: center;
+}
